@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯我独尊ゲーム</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <!-- 順序に気をつけること -->
+    <script type="module" src="src/appState.js"></script>
+    <script type="module" src="src/tab.js"></script>
+    <script type="module" src="src/index.js"></script>
+</head>
+
+<body class="has-header">
+    <div id="container">
+        <nav id="nav-regular">
+            <ul>
+                <li><object data="resources/TeamLogo.svg"></object></li>
+                <li><button type="button" class="nav-home active">ホーム</button></li>
+                <li><button type="button" class="nav-slides">作成したスライド</button></li>
+                <li><button type="button" class="nav-originality">オリジナリティへの追求</button></li>
+            </ul>
+        </nav>
+        <nav id="nav-compact">
+            <div id="bar">
+                <button type="button" id="nav-button-home"><object
+                        data="resources/symbols/house.svg">ホーム</object></button>
+                <object data="resources/TeamLogo.svg"></object>
+                <button type="button" id="nav-button-toggle"><object
+                        data="resources/symbols/line.3.horizontal.svg">ナビゲーションメニューを表示</object></button>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><button type="button" class="nav-home active">ホーム</button></li>
+                    <li><button type="button" class="nav-slides">作成したスライド</button></li>
+                    <li><button type="button" class="nav-originality">オリジナリティへの追求</button></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="section visible" id="section-home">
+            <div id="home-title">
+                <h1>唯我独尊ゲーム</h1>
+                <h2>みんなで楽しく脳トレしませんか？</h2>
+                <p>唯我独尊ゲームは連想ゲームの真逆！</p>
+                <p>リズムに乗って友達と言葉遊びしよう</p>
+            </div>
+        </div>
+        <div class="section" id="section-slides">
+            <h1>作成したスライド</h1>
+            <div id="slides-gallery"></div>
+            <div class="bottom-field">
+                <a href="https://docs.google.com/presentation/d/1_SZ0RE2rpeKoNpcMSAlpjUTiyO86nrarRPm2J9fICeM/edit?usp=sharing"
+                    target="_blank" rel="noopener noreferrer">Googleスライドで見る</a>
+            </div>
+        </div>
+        <div class="section" id="section-originality">
+            <h1>オリジナリティへの追求</h1>
+            <div class="originality">
+                <h2 class="difficulty level1">何回繋がったかで成功！</h2>
+                <ul>
+                    <li>机の上に数字の山札を裏向きに置く。</li>
+                    <li>最初の人が山札を引き、その数字の回数だけ言葉を繋げられたらゲームクリアとなる。</li>
+                    <li>最低の数字は参加人数、最大の数字は参加人数の3倍とする。</li>
+                    <li>数字の間隔は1ずつ、かつ数字ごとに1枚とする。</li>
+                </ul>
+            </div>
+            <div class="originality">
+                <h2 class="difficulty level1">思いついた人から協力プレイ</h2>
+                <ul>
+                    <li>順番に発言者を回していくルールから抜け出して、思いついたら誰でも発言してよくなる。</li>
+                    <li>これによりチームで楽しく協力プレイをすることができる。</li>
+                    <li>全員がゲームに参加するために、1周目は順番通りとする。2周目以降二個のルールを適用することができる。</li>
+                </ul>
+            </div>
+            <div class="originality">
+                <h2 class="difficulty level2">慣れてきたらNGワードで難易度アップ</h2>
+                <ul>
+                    <li>机の上にNGワードを書いた山札を裏向きに置く。</li>
+                    <li>最初の人が山札を引き、そのNGワードを言ったらゲームオーバーになる。</li>
+                    <li>このルールは全員に適用される。</li>
+                </ul>
+            </div>
+            <div class="originality">
+                <h2 class="difficulty level3">しりとり繋ぎで難易度アップ</h2>
+                <ul>
+                    <li>前の人の言葉と繋げるとき、しりとりで繋げることが必要となる。</li>
+                    <li>しりとりで繋げられなかった場合ゲームオーバーとなる。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="launch-screen" class="visible">
+        <div>
+            <object data="resources/cats.png"></object>
+            <p>読み込み中…</p>
+        </div>
+    </div>
+</body>
+
+</html>

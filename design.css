@@ -1,0 +1,113 @@
+/* Variable */
+
+:root {
+    --background: #FFFFFF;
+    --foreground: #000000;
+    --clear: #FFFFFF00;
+    --bar: #FFFFFF90;
+    --gray: #8E8E93;
+    --gray-2: #AEAEB2;
+    --gray-3: #C7C7CC;
+    --gray-4: #D1D1D6;
+    --gray-5: #E5E5EA;
+    --gray-6: #F2F2F7;
+    --red: #FF3B30;
+    --orange: #FF9500;
+    --yellow: #FFCC00;
+    --green: #34C759;
+    --mint: #00C7BE;
+    --teal: #30B0C7;
+    --cyan: #32ADE6;
+    --blue: #007AFF;
+    --indigo: #5856D6;
+    --purple: #AF52DE;
+    --pink: #FF2D55;
+    --brown: #A2845E;
+    --white: #FFFFFF;
+    --black: #000000;
+    --shadow: #00000010;
+    --theme: #03007F;
+    --theme-text: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #000000;
+        --foreground: #FFFFFF;
+        --clear: #00000000;
+        --bar: #00000090;
+        --gray: #8E8E93;
+        --gray-2: #636366;
+        --gray-3: #48484A;
+        --gray-4: #3a3a3C;
+        --gray-5: #2C2C2E;
+        --gray-6: #1C1C1E;
+        --red: #FF453A;
+        --orange: #FF9F0A;
+        --yellow: #FFD60A;
+        --green: #30D158;
+        --mint: #66D4CF;
+        --teal: #40C8E0;
+        --cyan: #64D2FF;
+        --blue: #0A84FF;
+        --indigo: #5E5CE6;
+        --purple: #BF5AF2;
+        --pink: #FF375F;
+        --brown: #AC8E68;
+        --white: #FFFFFF;
+        --black: #000000;
+        --shadow: #FFFFFF10;
+        --theme: var(--foreground);
+        --theme-text: #03007F;
+    }
+}
+
+/* Color */
+
+.red {
+    background-color: var(--red) !important;
+}
+
+.orange {
+    background-color: var(--orange) !important;
+}
+
+.yellow {
+    background-color: var(--yellow) !important;
+}
+
+.green {
+    background-color: var(--green) !important;
+}
+
+.mint {
+    background-color: var(--mint) !important;
+}
+
+.teal {
+    background-color: var(--teal) !important;
+}
+
+.cyan {
+    background-color: var(--cyan) !important;
+}
+
+.blue {
+    background-color: var(--blue) !important;
+}
+
+.indigo {
+    background-color: var(--indigo) !important;
+}
+
+.purple {
+    background-color: var(--purple) !important;
+}
+
+.pink {
+    background-color: var(--pink) !important;
+}
+
+.brown {
+    background-color: var(--brown) !important;
+}
