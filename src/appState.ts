@@ -104,7 +104,7 @@ export class AppState {
     if (galleryContainer) {
       for (let index = 0; index < 12; index++) {
         const image = document.createElement("img");
-        image.src = `https://raw.githubusercontent.com/BlueSkyAnimal/YuigaGame/main/resources/Slide ${index + 1}.svg`;
+        image.src = `https://raw.githubusercontent.com/kazu0309/YuigaGame/main/resources/Slide ${index + 1}.svg`;
         image.alt = "スライド";
         image.style.animationDelay = index * 50 + "ms";
         galleryContainer.appendChild(image);
