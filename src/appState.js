@@ -98,7 +98,7 @@ export class AppState {
     addSlides() {
         const galleryContainer = document.getElementById("slides-gallery");
         if (galleryContainer) {
-            for (let index = 0; index < 12; index++) {
+            for (let index = 0; index < 13; index++) {
                 const image = document.createElement("img");
                 image.src = `https://raw.githubusercontent.com/kazu0309/YuigaGame/main/resources/Slide ${index + 1}.svg`;
                 image.alt = "スライド";
