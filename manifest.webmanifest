@@ -5,11 +5,11 @@
     "display": "standalone",
     "description": "唯我独尊ゲームのご紹介",
     "icons": [{
-        "src": "./Resources/icon-192.png",
+        "src": "https://raw.githubusercontent.com/kazu0309/YuigaGame/main/resources/icon-192.png",
         "sizes": "192x192",
         "type": "image/png"
     }, {
-        "src": "./Resources/icon-512.png",
+        "src": "https://raw.githubusercontent.com/kazu0309/YuigaGame/main/resources/icon-512.png",
         "sizes": "512x512",
         "type": "image/png"
     }]
